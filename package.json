@@ -1,22 +1,21 @@
 {
-  "name": "nodeapi",
+  "name": "Node API",
   "version": "1.0.0",
   "description": "Node API",
   "main": "nodeAPI.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "git-rev-sync": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "n"
+    "test": ""
   },
   "repository": {
     "type": "git",
-    "url": "n"
+    "url": "https://GeekyAndDangerous@bitbucket.org/GeekyAndDangerous/nodeapi.git"
   },
-  "keywords": [
-    "n"
-  ],
+  "keywords": [],
   "author": "Gareth Jones",
   "license": "ISC"
 }
