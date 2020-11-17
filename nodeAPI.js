@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const port = 8000;
 const json = require('./package.json');
+app.use(express.static(__dirname + '/node_modules'));
 
 var git = require('git-rev-sync');
 
