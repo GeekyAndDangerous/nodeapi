@@ -1,15 +1,20 @@
 //Variable declarations
 const express = require('express');
 const app = express();
-const port = 8000;
 const json = require('./package.json');
-app.use(express.static(__dirname + '/node_modules'));
-
 var git = require('git-rev-sync');
 
-app.listen(port, ()=> {
-	console.log('listening on port 8000. Access port: localhost:8000\\health');
-})
+//Express module declaration
+app.use(express.static(__dirname + '/node_modules'));
+
+//Set port
+app.set('port', process.env.PORT || 8000);
+
+//Listen on set port.
+app.listen(app.get('port'),
+  function(){
+    console.log("Server listening on port: " + app.get('port') + ' - Access localhost:'+ app.get('port') + '/health');
+});
 
 //The application 
 app.get('/health', function (req,res) {
