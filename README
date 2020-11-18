@@ -1,0 +1,19 @@
+#nodeapi README
+####Author: Gareth Jones - 20195885
+*This file is intended for instructional purposes*
+
+nodeapi is a simple, low-code API and was created as a submission 
+for the Bendigo Bank IBL 2021 Tech Challenge as part of the 
+application process. 
+
+The API has minimal use and stands as a proof of concept for a 
+fully functional NodeJS API. The API is designed to return the name,
+version number and git hash of the latest git push. 
+
+The endpoint is /health and the port number is 8000.
+
+To run the API, type the followinf into a docker-enabled 
+command line: 
+
+    docker run -dp 8000:8000 garethtjones/nodeapi
+    
