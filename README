@@ -18,5 +18,9 @@ is installed.
 
 To run the API, type the following into your command line: 
 
+    docker pull garethtjones/nodeapi
+
+Followed by:
+
     docker run -dp 8000:8000 garethtjones/nodeapi
     
