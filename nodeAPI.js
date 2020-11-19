@@ -18,5 +18,5 @@ app.listen(app.get('port'),
 
 //The application 
 app.get('/health', function (req,res) {
-res.send('App Name = ' + json.name + '<br/>' + 'Version = ' + json.version + '<br/>' + 'Git hash = ' + git.commitHash())
+res.send('App Name = ' + json.name + '<br/>' + 'Version = ' + json.version + '<br/>' + 'Git hash = ' + git.long())
 })
