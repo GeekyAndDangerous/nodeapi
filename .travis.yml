@@ -3,7 +3,14 @@ language: node_js
 services:
   - docker
 
-before_install:
-  - docker build -t garethtjones/nodeapi .
-  - docker run -dp 8000:8000 garethtjones/nodeapi
-  - docker ps -a
+before_script:
+  - npm install
+
+script:
+  - docker build -t nodeapi .
+
+after_success:
+  - docker login - $docker_id -p $docker_password
+  - docker tag nodeapi $docker_id/nodeapi:$TRAVIS_BUILD_NUMBER
+  - docker tag nodeapi $docker_id/nodeapi:latest
+  - docker push $docker_id/nodeapi:latest
