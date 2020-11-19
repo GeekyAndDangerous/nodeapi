@@ -8,7 +8,7 @@ application process.
 
 The API has minimal use and stands as a proof of concept for a 
 fully functional NodeJS API. The API is designed to return the name,
-version number and git hash of the latest git push. 
+version number and git hash of the latest git push in a simple text format 
 
 The endpoint is /health and the port number is 8000.
 
