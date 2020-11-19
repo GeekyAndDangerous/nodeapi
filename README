@@ -12,8 +12,11 @@ version number and git hash of the latest git push.
 
 The endpoint is /health and the port number is 8000.
 
-To run the API, type the followinf into a docker-enabled 
-command line: 
+This build assumes that your system houses an operational
+version of [Docker](https://www.docker.com/) and that [NodeJS](https://nodejs.org/en/)
+is installed.
+
+To run the API, type the following into your command line: 
 
     docker run -dp 8000:8000 garethtjones/nodeapi
     
