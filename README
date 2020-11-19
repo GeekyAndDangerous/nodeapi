@@ -24,3 +24,6 @@ Followed by:
 
     docker run -dp 8000:8000 garethtjones/nodeapi
     
+Access the API by entering the following into your URL bar:
+    
+    localhost:8000/health
